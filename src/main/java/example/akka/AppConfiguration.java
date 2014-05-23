@@ -19,9 +19,6 @@ class AppConfiguration {
     @Inject
     private ApplicationContext applicationContext;
 
-    /**
-     * Actor system singleton for this application.
-     */
     @Bean
     public ActorSystem actorSystem() {
         ActorSystem system = ActorSystem.create("SchedulerTest");
