@@ -13,7 +13,6 @@ public class AkkaSpringExtension extends AbstractExtensionId<AkkaSpringExtension
 
     public static AkkaSpringExtension SpringExtProvider = new AkkaSpringExtension();
 
-    @Override
     public SpringExt createExtension(ExtendedActorSystem system) {
         return new SpringExt();
     }
